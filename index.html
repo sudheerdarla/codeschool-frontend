@@ -20,19 +20,42 @@
 		<div class='container'>
 			<header class='subheader'>
 				<h1>Latest News</h1>
-				<p>The lastest links in the front-end community. <a class='js-add-link' href="#">Add a link now!</a></p>
-				<form class="form js-form">
-					<label for="form-link-input" class="form-label">Add a Story: </label>
-					<input type="text" class="form-input">
+				<p>The lastest links in the front-end community. <a class='js-add-link' href='#'>Add a link now!</a></p>
+				<form class='form js-form'>
+					<label for='form-link-input' class='form-label'>Add a Story: </label>
+					<input type='text' class='form-input'>
 				</form>
 			</header>
+
+			<!-- modal -->
+			<div class='modal js-modal'>
+				<div class='modal-media'>
+					<img src='sud.jpg' alt=''>
+					<h3 class='modal-media-title'>Sudheer Darla</h3>
+				</div>
+				<div class='modal-content'>
+					<h3>About me</h3>
+					<p>I'm a seriously good copy and paster. I'm a seriously good copy and paster. I'm a seriously good copy and paster.</p>
+					<ol class='news'>
+						<li class='news-item'>
+							<a class='news-link' href='#'>Fronend Design</a>
+						</li>
+						<li class='news-item'>
+							<a class='news-link' href='#'>Javascript Learner!</a>
+						</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class='modal-overlay js-modal-overlay'></div>
+
 			<ol class='news'>
 				<li class='news-item'>
 					<a class='news-link' href='#'>Frontend Design</a>
 					<ul class='news-meta'>
 						<li class='news-meta-item'>
 							<em>Posted by: </em>
-							<a href='#'> Sud Sudheer</a>
+							<a href='#' class="js-show-modal"> Sud Sudheer</a>
 						</li>
 						<li class='news-meta-item'>
 							<a href='#'>2 Comments</a>
@@ -166,9 +189,9 @@
 		</div>
 	</main>
 	<script
-  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-  crossorigin="anonymous"></script>
+  src='https://code.jquery.com/jquery-3.1.1.slim.min.js'
+  integrity='sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc='
+  crossorigin='anonymous'></script>
   <script src='app.js'></script>
 </body>
 </html>
